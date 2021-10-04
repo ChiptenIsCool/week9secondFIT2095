@@ -1,0 +1,12 @@
+<table class="table table-striped">
+    <tr>
+      <th>Name</th>
+      <th>Year</th>
+<!--       <th>Actors</th> -->
+    </tr>
+    <tr *ngFor="let item of movies">
+      <td>{{item.title}}</td>
+      <td>{{item.year}}</td>
+<!--       <td>{{item.actors}}</td> -->
+    </tr>
+  </table>

@@ -1,0 +1,15 @@
+<div class="form-group">
+    <label for="actorName">Actor Name</label>
+    <input type="text" class="form-control" [(ngModel)]="actorName">
+  </div>
+
+  <button type="submit" class="btn btn-primary" (click)="onAddActor()">Save Actor</button>
+
+  <table class="table table-striped">
+    <tr>
+      <th>Name</th>
+    </tr>
+    <tr *ngFor="let item of actors">
+      <td>{{item.name}}</td>
+    </tr>
+  </table>
